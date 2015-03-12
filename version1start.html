@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<script type="text/javascript">
+    function highlightRow(row) {
+        if ((row.style.backgroundColor == "none") || (row.style.backgroundColor == ""))
+            {row.style.backgroundColor = "yellow";}
+        else
+            {row.style.backgoundColor = "red";}
+    }
+</script>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Applications to process</div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Class</th>
+                    <th>Reason for failure</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr onclick="highlightRow(this)">
+                    <td>12.02.2015</td>
+                    <td>PAB</td>
+                    <td>Invalid county</td>
+                </tr>
+                <tr onclick="highlightRow(this)">
+                    <td>15.02.2015</td>
+                    <td>PAB</td>
+                    <td>Complex name
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <p><a class="btn btn-success btn-lg" href="version1page1.html" role="button">Continue</a></p>
+    </div>
+</div>
